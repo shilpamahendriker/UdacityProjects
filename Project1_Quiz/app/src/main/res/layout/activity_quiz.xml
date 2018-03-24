@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context="com.example.avni.project1_quiz.QuizActivity">
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Welcome to the Quiz"
+            android:textAlignment="center"
+            android:textColor="#d84315"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="1. Which Planet is nearest to Earth?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/radioVenus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:focusable="true"
+                android:text="Venus" />
+
+            <RadioButton
+                android:id="@+id/radioMars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mars" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="2. Which among the following are two longest rivers in the world?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAmazon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amazon River" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nile" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYangtze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yangtze" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yellow River"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="3. Which molecule has the formula H20?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type here"
+            android:inputType="textCapWords"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="4. What does USB stand for?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/radioUniversalSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Universal Serial Buss" />
+
+            <RadioButton
+                android:id="@+id/radioUniformSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uniform Serial Buss" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="5. On which day of the year is womens day celebrated?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <DatePicker
+            android:id="@+id/DatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:datePickerMode="calendar"></DatePicker>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="6. Barack Obama is 44th President of United States?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/radioTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/radioFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="7. Which is the only even prime number?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numberView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scroll to seclect a number..."
+            android:textSize="12sp" />
+
+        <NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </NumberPicker>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="8. Sahara desert is in which continent?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAfrica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type here"
+            android:inputType="textCapWords"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="9. Which of these countries are in Asia?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxChina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="China" />
+
+        <CheckBox
+            android:id="@+id/checkBoxIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSingapore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Singapore" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBrazil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brazil" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="10. Identify the person in the picture"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewQ10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nelson_mandela"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/radioNelson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Nelson Mandela" />
+
+            <RadioButton
+                android:id="@+id/radioHitler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adolf Hitler" />
+
+            <RadioButton
+                android:id="@+id/radioFranklin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Franklin Roosvelt" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submitAnswers"
+            android:text="Submit Answers"
+            android:textAlignment="center" />
+    </LinearLayout>
+</ScrollView>
