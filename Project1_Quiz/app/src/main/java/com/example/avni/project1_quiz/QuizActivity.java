@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.Chronometer;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.NumberPicker;
@@ -13,8 +12,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.lang.reflect.Array;
 
 public class QuizActivity extends AppCompatActivity {
     int[] correctAnswers = new int[10];
@@ -47,10 +44,7 @@ public class QuizActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         TextView textView = (TextView) findViewById(R.id.welcomeText);
         textView.setText(getResources().getString( R.string.hiGreeting) + " " + extras.getString("PLAYER_NAME") + "," + getResources().getString(R.string.welcomeGreetings));
-
-
-
-    }
+   }
 
 
 
@@ -136,7 +130,7 @@ public class QuizActivity extends AppCompatActivity {
         /**
          * Checking the answer for question No. 8.Discarding any spaces entered and converting to lowercase
          */
-        
+
         editTextAfrica = (EditText) findViewById(R.id.editTextAfrica);
         if (editTextAfrica.getText().toString().trim().toLowerCase().equals("africa")) {
             rightAnswers++;
@@ -175,8 +169,12 @@ public class QuizActivity extends AppCompatActivity {
         toast.show();
         rightAnswers = 0;
 
+        /**
+         * Creating intent and passing array of correct and wrong answers with player name to the next activity
+         */
+
         Bundle extras = getIntent().getExtras();
-        Intent resultIntent = new Intent(QuizActivity.this, Result.class);
+        Intent resultIntent = new Intent(QuizActivity.this, ResultActivity.class);
         resultIntent.putExtra("PLAYER_NAME", extras.getString("PLAYER_NAME"));
         resultIntent.putExtra("CORRECT_ANSWERS_ARRAY", correctAnswers);
         startActivity(resultIntent);
