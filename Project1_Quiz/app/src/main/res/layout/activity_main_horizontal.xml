@@ -4,25 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.example.avni.project1_quiz.MainActivity">
 
     <LinearLayout
         android:id="@+id/LinearLayout1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="384dp"
-        android:orientation="vertical"
         android:layout_weight="0.5"
-        >
+        android:orientation="vertical">
 
 
         <ImageView
             android:id="@+id/imageViewQuiztime"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/quiztime"
             android:scaleType="fitCenter"
-            />
+            android:src="@drawable/quiztime" />
     </LinearLayout>
 
     <LinearLayout

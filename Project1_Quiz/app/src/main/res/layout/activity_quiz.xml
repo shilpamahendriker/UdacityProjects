@@ -7,23 +7,20 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:orientation="vertical"
         android:padding="20dp"
         tools:context="com.example.avni.project1_quiz.QuizActivity">
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <TextView
             android:id="@+id/welcomeText"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Welcome to the Quiz"
+            android:text="@string/welcomeGreetings"
             android:textAlignment="center"
-            android:textColor="#d84315"
+            android:textColor="#f57c00"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -31,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="1. Which Planet is nearest to Earth?"
+            android:text="@string/Q1"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -60,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="2. Which among the following are two longest rivers in the world?"
+            android:text="@string/Q2"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -92,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="3. Which molecule has the formula H20?"
+            android:text="@string/Q3"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -108,7 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="4. What does USB stand for?"
+            android:text="@string/Q4"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -136,7 +133,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="5. On which day of the year is womens day celebrated?"
+            android:text="@string/Q5"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -144,13 +141,13 @@
             android:id="@+id/DatePicker"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:datePickerMode="calendar"></DatePicker>
+            android:datePickerMode="calendar"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="6. Barack Obama is 44th President of United States?"
+            android:text="@string/Q6"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -178,7 +175,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="7. Which is the only even prime number?"
+            android:text="@string/Q7"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -186,7 +183,7 @@
             android:id="@+id/numberView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scroll to seclect a number..."
+            android:text="@string/ScrollText"
             android:textSize="12sp" />
 
         <NumberPicker
@@ -200,7 +197,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="8. Sahara desert is in which continent?"
+            android:text="@string/Q8"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -208,7 +205,7 @@
             android:id="@+id/editTextAfrica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Type here"
+            android:hint="@string/TypeHere"
             android:inputType="textCapWords"
             android:textSize="14sp" />
 
@@ -216,7 +213,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="9. Which of these countries are in Asia?"
+            android:text="@string/Q9"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -248,7 +245,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="10. Identify the person in the picture"
+            android:text="@string/Q10"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -293,7 +290,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="submitAnswers"
-            android:text="Submit Answers"
+            android:text="@string/SubmitAnswers"
             android:textAlignment="center" />
     </LinearLayout>
 </ScrollView>
