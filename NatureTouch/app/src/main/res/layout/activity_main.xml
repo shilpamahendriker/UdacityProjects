@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/naturetouch"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:text="Nature Touch"/>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/businessTitle"
+            style="@style/AppTheme"
+            android:paddingTop="20dp"
+            android:paddingLeft="12dp"
+            android:text="@string/companyNameText"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="30dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="15dp">
+            <ImageView
+                android:id="@+id/image_location"
+                android:src="@mipmap/ic_launcher_map"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                 />
+            <TextView
+                android:id="@+id/businessAddress"
+                style="@style/AppTheme"
+                android:paddingLeft="12dp"
+                android:text="@string/addressText"
+                 />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:paddingLeft="30dp">
+
+
+        <ImageView
+            android:id="@+id/image_website"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_launcher_url"
+             />
+
+
+    <TextView
+        android:id="@+id/businessWebsite"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+
+        android:paddingLeft="12dp"
+        android:text="@string/hyperlink"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:paddingLeft="30dp">
+
+
+        <ImageView
+            android:id="@+id/image_email"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_launcher_email"
+            />
+        <TextView
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="12dp"
+            android:text="@string/email"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="3dp"
+            android:paddingLeft="30dp">
+
+
+            <ImageView
+                android:id="@+id/image_phone"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/ic_launcher_phone"
+                />
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="12dp"
+                android:text="@string/phoneNo"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:paddingLeft="30dp">
+
+
+        <ImageView
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_launcher_hours"
+            />
+        <TextView
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="12dp"
+            android:text="@string/hours"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="9dp"
+        android:paddingTop="8dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:text="@string/companyDescText"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="140dp">
+
+        <ImageView
+            android:id="@+id/image_fb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageView
+            android:id="@+id/image_twitter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_twitter"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Nature Touch</string>
+    <string name="hyperlink"><a href="www.NatureTouchMedicine.com">www.NatureTouchMedicine.com</a></string>
+    <string name="addressText">1080 Obetz Rd, Columbus, OH 43207</string>
+    <string name="companyNameText">Nature Touch Herbal Medicines</string>
+    <string name="companyDescText">One stop for all your medical needs in a natural way</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="email">contact@naturetouch.com</string>
+    <string name="phoneNo">614 000 0000</string>
+    <string name="hours">Mon-Fri 9.00 am to 5 pm</string>
+</resources>
