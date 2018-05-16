@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pitchimage"
+        android:isScrollContainer="true"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/countryAImage"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/indiaflag" />
+
+
+        <ImageView
+            android:id="@+id/countryBImage"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/englandflag" />
+
+
+        <TextView
+            android:id="@+id/countryAName"
+            style="@style/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="INDIA"
+            app:layout_constraintLeft_toLeftOf="@id/countryAImage"
+            app:layout_constraintRight_toRightOf="@id/countryAImage"
+            app:layout_constraintTop_toBottomOf="@id/countryAImage" />
+
+
+        <TextView
+            android:id="@+id/countryBName"
+            style="@style/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ENGLAND"
+            app:layout_constraintLeft_toLeftOf="@id/countryBImage"
+            app:layout_constraintRight_toRightOf="@id/countryBImage"
+            app:layout_constraintTop_toBottomOf="@id/countryBImage" />
+
+        <TextView
+            android:id="@+id/scoreCountryA"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="0/0"
+            app:layout_constraintLeft_toLeftOf="@id/countryAImage"
+            app:layout_constraintRight_toRightOf="@id/countryAImage"
+            app:layout_constraintTop_toBottomOf="@+id/countryAName" />
+
+        <TextView
+            android:id="@+id/scoreCountryB"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="0/0"
+            app:layout_constraintLeft_toLeftOf="@id/countryBImage"
+            app:layout_constraintRight_toRightOf="@id/countryBImage"
+            app:layout_constraintTop_toBottomOf="@+id/countryBName" />
+
+        <Button
+            android:id="@+id/btnCountryA6Runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="plusSixA"
+            android:text="6 RUNS"
+            app:layout_constraintLeft_toLeftOf="@id/countryAImage"
+            app:layout_constraintRight_toRightOf="@id/countryAImage"
+            app:layout_constraintTop_toBottomOf="@+id/scoreCountryA" />
+
+        <Button
+            android:id="@+id/btnCountryA4Runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="plusFourA"
+            android:text="4 RUNS"
+            app:layout_constraintLeft_toLeftOf="@id/countryAImage"
+            app:layout_constraintRight_toRightOf="@id/countryAImage"
+            app:layout_constraintTop_toBottomOf="@+id/btnCountryA6Runs" />
+
+        <Button
+            android:id="@+id/btnCountryA1Run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="plusOneA"
+            android:text="1 RUN"
+            app:layout_constraintLeft_toLeftOf="@id/countryAImage"
+            app:layout_constraintRight_toRightOf="@id/countryAImage"
+            app:layout_constraintTop_toBottomOf="@+id/btnCountryA4Runs" />
+
+        <Button
+            android:id="@+id/btnCountryAOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="outA"
+            android:text="OUT"
+            app:layout_constraintLeft_toLeftOf="@id/countryAImage"
+            app:layout_constraintRight_toRightOf="@id/countryAImage"
+            app:layout_constraintTop_toBottomOf="@+id/btnCountryA1Run" />
+
+        <Button
+            android:id="@+id/btnCountryB6Runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="plusSixB"
+            android:text="6 RUNS"
+            app:layout_constraintLeft_toLeftOf="@id/countryBImage"
+            app:layout_constraintRight_toRightOf="@id/countryBImage"
+            app:layout_constraintTop_toBottomOf="@+id/scoreCountryB" />
+
+        <Button
+            android:id="@+id/btnCountryB4Runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="plusFourB"
+            android:text="4 RUNS"
+            app:layout_constraintLeft_toLeftOf="@id/countryBImage"
+            app:layout_constraintRight_toRightOf="@id/countryBImage"
+            app:layout_constraintTop_toBottomOf="@+id/btnCountryB6Runs" />
+
+        <Button
+            android:id="@+id/btnCountryB1Run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="plusOneB"
+            android:text="1 RUN"
+            app:layout_constraintLeft_toLeftOf="@id/countryBImage"
+            app:layout_constraintRight_toRightOf="@id/countryBImage"
+            app:layout_constraintTop_toBottomOf="@+id/btnCountryB4Runs" />
+
+        <Button
+            android:id="@+id/btnCountryBOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="outB"
+            android:text="OUT"
+            app:layout_constraintLeft_toLeftOf="@id/countryBImage"
+            app:layout_constraintRight_toRightOf="@id/countryBImage"
+            app:layout_constraintTop_toBottomOf="@+id/btnCountryB1Run" />
+
+        <Button
+            android:id="@+id/btnResetScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="8dp"
+            android:onClick="resetScores"
+            android:text="RESET"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCountryBOut" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
