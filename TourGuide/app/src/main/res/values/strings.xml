@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+
+    <string name="cosiShortDesc">COSI is a science museum and research center</string>
+    <string name="columbuszooShortDesc">Columbus Zoo and Aquarium</string>
+    <string name="gatewayShortDesc">Lively, modern space for a variety of movies</string>
+    <string name="wexnerShortDesc">Multidisciplinary, international laboratory</string>
+    <string name="franklinartShortDesc">Conservatory and Botanical Gardens</string>
+    <string name="shortnorthShortDesc">Discover the Short North Arts District</string>
+    <string name="columbusMuseumShortDesc">Gallery of Fine Arts</string>
+    <string name="cosiDesc">COSI is a science museum and research center located in Columbus, Ohio in the United States. Originally opened in 1964, COSI was relocated to a 320,000 square foot state-of-the-art facility</string>
+    <string name="columbuszooDesc">The Columbus Zoo and Aquarium is a non-profit zoo located near Powell in Liberty Township, Delaware County, Ohio, United States, north of the city of Columbus</string>
+    <string name="gatewayDesc">Lively, modern space for a variety of movies  film-related events, plus an undersea-themed bar</string>
+    <string name="franklinartDesc">Franklin Park Conservatory and Botanical Gardens is a botanical garden and conservatory located in Columbus, Ohio. It is open daily and an admission fee is charged.</string>
+    <string name="shortnorthDesc">Known as the art and soul of Columbus, the culturally rich Short North Arts District is a pioneer in the urban revitalization of Central Ohio. Visitors are invited to explore our vibrant neighborhood known for its wide variety of amazing art, dining, nightlife, fashion, home décor, and unique gifts.</string>
+    <string name="columbusMuseumDesc">The Columbus Museum of Art is an art museum located in downtown Columbus, Ohio. Formed in 1878 as the Columbus Gallery of Fine Arts, it was the first art museum to register its charter with the state of Ohio.</string>
+    <string name="wexnerDesc">The Wexner Center for the Arts is The Ohio State University’s "multidisciplinary, international laboratory for the exploration and advancement of contemporary art</string>
+    <string name="hotchikenShortDesc">Spicy Nashville-style fried chicken</string>
+    <string name="hotchikenDesc">Spicy Nashville-style fried chicken  Southern sides in a barnlike space with counter service.</string>
+    <string name="refectoryShortDesc">Upscale French fare  wine</string>
+    <string name="refectoryDesc">Upscale French fare and wine in a former church with soaring ceilings and stained-glass windows</string>
+    <string name="MozartsShortDesc">Cozy eatery</string>
+    <string name="MozartsDesc">Cozy eatery offering Austrian specialties and European wines in a classy setting with live music.</string>
+    <string name="ThePearlShortDesc">culinary jewel that showcases made-from-scratch food</string>
+    <string name="ThePearlDesc">The Pearl is a well-polished culinary jewel that showcases made-from-scratch food, classically inspired cocktails and an exclusive selection of Ales, Lagers and Stouts.  All within one urban and cozy tavern.</string>
+    <string name="NorthStarShortDesc">open kitchen and house-baked treats.</string>
+    <string name="NorthStarDesc">Modern, organic New American haunt with counter service, an open kitchen and house-baked treats.</string>
+    <string name="HydeParkShortDesc">High-end steakhouse</string>
+    <string name="HydeParkDesc">High-end steakhouse chain serving grilled meats, seafood and cocktails in a sophisticated setting</string>
+    <string name="ZCucinaShortDesc">Italian restaurant and bar</string>
+    <string name="ZCucinaDesc">At Z Cucina di Spirito, you will enter a world of traditional and modern Italian cuisine that also moves w﻿ith ease into the realm of Mediterranean flavors. The unique and comfortable bar and dining area is warm and invitin</string>
+
+
+
+
+
+</resources>
