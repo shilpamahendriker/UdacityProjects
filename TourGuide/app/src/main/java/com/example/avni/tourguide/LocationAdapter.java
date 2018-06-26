@@ -34,13 +34,15 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
     public LocationAdapter(Context mContext, ArrayList<Location> locations) {
         this.mContext = mContext;
         this.locations = locations;
+
     }
 
     @Override
     public LocationViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //inflating and returning our view holder
+
         LayoutInflater inflater = LayoutInflater.from(mContext);
-        View view = inflater.inflate(R.layout.list_item, null);
+        View view = inflater.inflate(R.layout.list_item, null,true);
         return new LocationViewHolder(view);
     }
 
@@ -54,7 +56,12 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
         holder.textName.setText(location.getLocationName().toString());
         holder.textAddress.setText(location.getLocationAddress());
         holder.textDesc.setText(location.getShortDescResId());
-        holder.imgView.setImageResource(location.getLocationImageId());
+        if (location.getLocationImageId()== 0){
+            holder.imgView.setVisibility(View.GONE);
+        }
+        else {
+            holder.imgView.setImageResource(location.getLocationImageId());
+        }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,7 +72,8 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
                 intent.putExtra("HOURS",selection.getHours());
                 intent.putExtra("DESC", selection.getmFullDescResId());
                 intent.putExtra("IMAGEID", selection.getLocationImageId());
-                //intent.putExtra("PAGEID", currentViewPage);
+                intent.putExtra("PHONE", selection.getPhoneNo());
+
 
                 mContext.startActivity(intent);
             }

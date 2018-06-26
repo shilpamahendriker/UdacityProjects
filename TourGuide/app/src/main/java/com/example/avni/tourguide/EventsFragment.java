@@ -32,11 +32,12 @@ public class EventsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.locations_list, container, false);
         final ArrayList<Location> locations = new ArrayList<Location>();
 
-        locations.add(new Location("Express Live!"," 405 Neil Ave, Columbus, OH 43215","9.00AM-6PM",R.string.columbusMuseumShortDesc,R.string.columbusMuseumDesc,R.drawable.ic_launcher_background));
-        locations.add(new Location("The Ohio Expo Center & State Fair","717 E 17th Ave, Columbus, OH 43211","9.00AM-6PM",R.string.cosiShortDesc,R.string.cosiDesc,R.drawable.ic_launcher_background));
-        locations.add(new Location("Dublin Irish Festival","DCRC dublin OH","9.00AM-6PM",R.string.columbuszooShortDesc,R.string.columbuszooDesc,R.drawable.ic_launcher_background));
-        locations.add(new Location("Jazz and Rib Festival","Scioto Mile","9.00AM-6PM",R.string.shortnorthShortDesc,R.string.shortnorthDesc,R.drawable.ic_launcher_background));
-        locations.add(new Location("Red, White & BOOM!","Downtown Columbus","9.00AM-6PM",R.string.wexnerShortDesc,R.string.wexnerDesc,R.drawable.ic_launcher_background));
+        locations.add(new Location("Express Live!","405 Neil Ave, Columbus, OH 43215","9.00AM-6PM","614-222-2222",R.string.expressliveShortDesc,R.string.expressliveDesc));
+        locations.add(new Location("Ohio State Fair","Ohio Expo Center and State Fairgrounds","9.00AM-9PM","614-222-2222",R.string.ohiostatefairShortDesc,R.string.ohiostatefairDesc));
+
+        locations.add(new Location("Dublin Irish Festival","DCRC dublin OH","9.00AM-6PM","614-222-2222",R.string.dublinirishShortDesc,R.string.dublinirishDesc));
+        locations.add(new Location("Jazz and Rib Festival","Scioto Mile","9.00AM-6PM","614-222-2222",R.string.jazzandribShortDesc,R.string.jazzandribDesc));
+        locations.add(new Location("Red, White & BOOM!","Downtown Columbus","9.00AM-6PM","614-222-2222",R.string.redwhiteShortDesc,R.string.redwhiteDesc));
 
         LocationAdapter adapter = new LocationAdapter(this.getActivity(), locations);
 

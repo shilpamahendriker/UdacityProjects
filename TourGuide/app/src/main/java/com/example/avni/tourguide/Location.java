@@ -8,8 +8,9 @@ public class Location {
     private int mShortDescResId;
     private  int mFullDescResId;
     private int mImageResourceId;
+    private String mPhoneNo;
 
-    public Location(String name, String address, String description){
+    /*public Location(String name, String address, String description){
         mName = name;
         mAddress = address;
         mDescription = description;
@@ -19,14 +20,26 @@ public class Location {
         mAddress = address;
         mDescription = description;
         mImageResourceId = imageResourceId;
-    }
-    public Location(String name, String address,String hours, int shortDesc,int fullDesc, int imageResourceId){
+    }*/
+    public Location(String name, String address,String hours,String phoneno, int shortDesc,int fullDesc, int imageResourceId){
         mName = name;
         mAddress = address;
         mHours = hours;
         mShortDescResId = shortDesc;
         mFullDescResId = fullDesc;
         mImageResourceId = imageResourceId;
+        mPhoneNo = phoneno;
+    }
+
+
+    public Location(String name, String address,String hours,String phoneno, int shortDesc,int fullDesc){
+        mName = name;
+        mAddress = address;
+        mHours = hours;
+        mShortDescResId = shortDesc;
+        mFullDescResId = fullDesc;
+        mPhoneNo = phoneno;
+
     }
     public String getLocationName(){ return mName;}
     public String getLocationAddress(){ return mAddress;}
@@ -35,4 +48,5 @@ public class Location {
     public int getShortDescResId(){return mShortDescResId;}
     public int getmFullDescResId(){return mFullDescResId;}
     public int getLocationImageId(){ return mImageResourceId;}
+    public String getPhoneNo(){ return mPhoneNo;}
 }

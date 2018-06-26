@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="50dp">
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:padding="8dp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageResource"
@@ -25,44 +27,36 @@
                 android:layout_height="90dp"
                 android:padding="4dp"
                 android:src="@drawable/ic_launcher_background"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textLocationName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_toRightOf="@id/imageResource"
                 android:text="Location name"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                android:textColor="#000000" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/textLocationAddress"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textLocationName"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_toRightOf="@id/imageResource"
                 android:text="Address"
+                android:textStyle="bold"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
             <TextView
                 android:id="@+id/textLocationDesc"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textLocationAddress"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_toRightOf="@id/imageResource"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
                 android:text="Short description"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                  />
-
-
-
-        </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
     </android.support.v7.widget.CardView>
-</LinearLayout>
+</RelativeLayout>
