@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android News</string>
+    <string name="no_data">No news articles found</string>
+    <string name="no_network">No Network Connection</string>
+</resources>
