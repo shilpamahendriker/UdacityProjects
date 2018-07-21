@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
 
     public static final String LOG_TAG = MainActivity.class.getName();
 
-    private static final String TG_REQUEST_URL = "https://content.guardianapis.com/search?from-date=2017-07-19&show-tags=contributor&q=android&api-key=b3a648a8-7995-48bf-9e19-1eade1504a46";
+    private static final String TG_REQUEST_URL = "https://content.guardianapis.com/search?from-date=2017-07-19&show-tags=contributor&q=android&api-key=test";
 
     private NewsArticleAdapter adapter;
     private static final int NEWS_LOADER_ID = 1;
