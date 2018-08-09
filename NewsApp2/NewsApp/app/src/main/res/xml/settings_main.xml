@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Date">
+        <com.example.avni.newsapp.DatePreference
+            android:defaultValue="May 01, 2017"
+            android:key="@string/settings_from_date_key"
+            android:summary="Set your desired from date"
+            android:title="@string/settings_from_date_title" />
+        <com.example.avni.newsapp.DatePreference
+            android:defaultValue="Aug 03, 2018"
+            android:key="@string/settings_to_date_key"
+            android:summary="Set your desired to date"
+            android:title="@string/settings_to_date_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:layout="@layout/preference_layout_divider" />
+
+    <PreferenceCategory android:title="Order">
+        <ListPreference
+            android:defaultValue="@string/settings_order_by_default"
+            android:entries="@array/settings_order_by_labels"
+            android:entryValues="@array/settings_order_by_values"
+            android:key="@string/settings_order_by_key"
+            android:title="@string/settings_order_by_label" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:layout="@layout/preference_layout_divider" />
+
+    <PreferenceCategory android:title="@string/settings_category_reset_to_default_label">
+        <com.example.avni.newsapp.ResetToDefaultPreference
+            android:dialogTitle="@string/settings_reset_to_default_dialogue_title"
+            android:key="@string/settings_reset_to_default_key"
+            android:summary="@string/settings_reset_to_default_summary"
+            android:title="@string/settings_reset_to_default_title" />
+    </PreferenceCategory>
+</PreferenceScreen>
