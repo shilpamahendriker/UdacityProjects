@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Book Store</string>
+    <string name="unclassified">UNCLASSIFIED</string>
+    <string name="fantasy">FANTASY</string>
+    <string name="science">SCIENCE</string>
+    <string name="fiction">FICTION</string>
+    <string name="horror">HORROR</string>
+    <string name="history">HISTORY</string>
+    <string name="autobiography">AUTOBIOGRAPHY</string>
+
+    <!-- Strings for Insert Activity textview labels-->
+    <string name="book_details">Book Details</string>
+    <string name="category">Category</string>
+    <string name="publish_date">Published Date</string>
+    <string name="quantity">Quantity</string>
+    <string name="supplier_details">Supplier details</string>
+    <string name="save_book">Save Book</string>
+    <string name="delete_book">Delete Book</string>
+
+    <!-- Strings for Insert Activity Edittext view hint labels-->
+    <string name="book_title">Book Title</string>
+    <string name="currency">$</string>
+    <string name="tap_to_select_date">Tap to select date</string>
+    <string name="supplier_name">Supplier name</string>
+    <string name="supplier_phone">Phone no.</string>
+
+    <string name="nodata">There are no books in the inventory yet, use the books button to insert books</string>
+
+    <string name="InsertEdit_activity_title_new_book">Add a Book</string>
+    <string name="InsertEdit_activity_title_Edit_book">Edit Book</string>
+    <string name="InserEdit_activity_insert_book_failed">Book Insertion failed</string>
+    <string name="InserEdit_activity_insert_book_successful">Book Inserted sucessfully</string>
+    <string name="InserEdit_activity_update_book_failed">Book update failed</string>
+    <string name="InserEdit_activity_update_book_successful">Book updated sucessfully</string>
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current book [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Toast message in editor when current book was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="InsertEdit_activity_delete_book_successful">Book deleted</string>
+
+    <!-- Toast message in editor when current book has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="InsertEdit_activity_delete_book_failed">Error with deleting book</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current book [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Are you sure you want to delete this book?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current book [CHAR LIMIT=NONE] -->
+    <string name="delete_all_dialog_msg">Are you sure you want to delete all the books?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current book [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current book [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="sale_button_colId_value">Column Tag</string>
+    <string name="sale_button_qty_value">Quantity Tag</string>
+    <string name="sale">Sale</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="current_quantity">Current Quantity</string>
+    <string name="price">Price</string>
+
+    <!--Shared preferences related strings -->
+    <string name="settings_order_by_label">Order books by</string>
+    <string name="settings_order_by_title">By title</string>
+    <string name="settings_order_by_quantity">By quantity</string>
+    <string name="settings_order_by_price">By price</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_title_value</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_title_value">title</string>
+    <string name="settings_order_by_quantity_value">quantity</string>
+    <string name="settings_order_by_price_value">price</string>
+    <string-array name="settings_order_by_labels">
+        <item>@string/settings_order_by_title</item>
+        <item>@string/settings_order_by_quantity</item>
+        <item>@string/settings_order_by_price</item>
+    </string-array>
+    <string-array name="settings_order_by_values">
+        <item>@string/settings_order_by_title_value</item>
+        <item>@string/settings_order_by_quantity_value</item>
+        <item>@string/settings_order_by_price_value</item>
+    </string-array>
+    <string name="title_activity_preferences">Preferences</string>
+
+    <!--Search Inventory activity  related strings-->
+    <string name="book_title_with_text">Book title with text</string>
+    <string name="seach_text">Search Text</string>
+    <string name="search_book">Search</string>
+    <string name="search_activity_label">Search Inventory</string>
+    <string name="no_books_found">No Books found for the search</string>
+    <string name="try_another_search">Try another search</string>
+</resources>
